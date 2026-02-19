@@ -1,0 +1,1 @@
+La carpeta representa la parte visual de la aplicacion

@@ -1,0 +1,1 @@
+rootProject.name = "spotify_app_gradle"
