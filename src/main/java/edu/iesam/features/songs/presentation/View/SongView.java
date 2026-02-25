@@ -1,6 +1,6 @@
 package edu.iesam.features.songs.presentation.View;
 
-import edu.iesam.features.songs.data.Repositories.SongDataRepository;
+import edu.iesam.features.songs.data.SongDataRepository;
 import edu.iesam.features.songs.domain.Models.Song;
 import edu.iesam.features.songs.domain.UseCases.GetSongsUseCase;
 

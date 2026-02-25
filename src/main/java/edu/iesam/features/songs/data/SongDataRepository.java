@@ -1,4 +1,4 @@
-package edu.iesam.features.songs.data.Repositories;
+package edu.iesam.features.songs.data;
 
 import edu.iesam.features.songs.domain.Models.Song;
 import edu.iesam.features.songs.domain.Repositories.SongRepository;

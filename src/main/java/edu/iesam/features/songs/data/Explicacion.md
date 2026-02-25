@@ -1,1 +1,0 @@
-La carpeta representa las fuentes de datos de la aplicacion
