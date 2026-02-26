@@ -38,7 +38,7 @@ body:
     attributes:
       label: 📚Referencias y Recursos
 
-  - type: texarea
+  - type: textarea
     id: impedimentos
     attributes:
       label: 🛑Impedimentos Detectados
