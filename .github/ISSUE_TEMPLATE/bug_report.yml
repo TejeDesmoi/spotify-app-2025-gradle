@@ -1,0 +1,56 @@
+name: 🐞 Bug Report
+description: Reporta un error o comportamiento inesperado
+title: "[BUG] - "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar este bug 🙌  
+        Por favor completa la siguiente información.
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: 📝 Descripción del bug
+      description: Describe claramente qué está ocurriendo.
+      placeholder: Explica el problema...
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: 🔄 Pasos para reproducir
+      description: Enumera los pasos para reproducir el error.
+      placeholder: |
+        1. Ir a...
+        2. Hacer clic en...
+        3. Ver error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: ✅ Comportamiento esperado
+      placeholder: Describe qué debería ocurrir.
+    validations:
+      required: true
+
+  - type: textarea
+    id: capturas
+    attributes:
+      label: 📸 Capturas de pantalla
+      description: Si aplica, agrega screenshots.
+
+  - type: input
+    id: entorno
+    attributes:
+      label: 💻 Entorno
+      placeholder: |
+        - OS:
+        - Node:
+        - Browser:
