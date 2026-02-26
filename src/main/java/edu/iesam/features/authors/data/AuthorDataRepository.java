@@ -22,6 +22,10 @@ public class AuthorDataRepository implements AuthorRepository {
     public void addAuthor(String id, String name, String nationality, String dateBorn) {
         authorMemLocalDataSource.addAuthor(id, name, nationality, dateBorn);
     }
+    @Override
+    public void deleteAuthor(String id){
+        authorMemLocalDataSource.deleteAuthor(id);
+    }
 
     public static AuthorDataRepository getInstance(){
         if (instance == null){
