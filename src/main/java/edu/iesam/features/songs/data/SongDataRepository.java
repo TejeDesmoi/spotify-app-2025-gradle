@@ -16,6 +16,11 @@ public class SongDataRepository implements SongRepository {
     @Override
     public ArrayList<Song> findAll() {return songMemLocalDataSource.findAll();}
 
+    @Override
+    public void addSong(String id, String title, String album, String artist, String genre, String duration) {
+        songMemLocalDataSource.addSong(id,title,album,artist,genre,duration);
+    }
+
     public static SongDataRepository getInstance(){
         if (instance == null){
             instance = new SongDataRepository(new SongMemLocalDataSource());
