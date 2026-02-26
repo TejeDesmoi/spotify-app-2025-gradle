@@ -53,6 +53,17 @@ public class Song {
         this.duration = duration;
     }
     //endregion
+    //region Cosntructor
 
+    public Song(String id, String title, String album, String artist, String genre, String duration) {
+        this.id = id;
+        this.title = title;
+        this.album = album;
+        this.artist = artist;
+        this.genre = genre;
+        this.duration = duration;
+    }
+
+    //endregion
 
 }
