@@ -2,10 +2,10 @@ package edu.iesam.features.authors.domain.UseCases;
 
 import edu.iesam.features.authors.domain.Repository.AuthorRepository;
 
-public class deleteAuthorUseCase {
+public class DeleteAuthorUseCase {
     private AuthorRepository authorRepository;
 
-    public deleteAuthorUseCase(AuthorRepository authorRepository) {
+    public DeleteAuthorUseCase(AuthorRepository authorRepository) {
         this.authorRepository = authorRepository;
     }
 
