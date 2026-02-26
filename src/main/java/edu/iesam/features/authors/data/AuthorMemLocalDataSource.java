@@ -28,4 +28,7 @@ public class AuthorMemLocalDataSource {
         Author newAuthor = new Author(id, name, nationality, dateBorn);
         authorsBdStorage.add(newAuthor);
     }
+    public void deleteAuthor(String id){
+        authorsBdStorage.removeIf(s -> s.getId().equals(id));
+    }
 }
