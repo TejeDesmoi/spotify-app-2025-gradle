@@ -29,7 +29,10 @@ body:
     id: Criterios
     attributes:
       label: ✅ Criterios de Aceptación
-      description: ¿Esta tarea se considerará terminada y lista para revisión solo si se cumplen todos los criterios siguientes.
+      description: ¿Esta tarea se considerará terminada y lista para revisión solo si se cumplen todos los criterios siguientes.|
+        ✔️ El código implementa la funcionalidad descrita en el objetivo.
+        ✔️ El código pasa todas las pruebas unitarias/de integración.
+        ✔️ La funcionalidad es documentada en el formato acordado.
     validations:
       required: true
 
