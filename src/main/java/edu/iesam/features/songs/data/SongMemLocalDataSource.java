@@ -27,4 +27,11 @@ public class SongMemLocalDataSource {
         Song newSong = new Song(id,title,album,artist,genre,duration);
         songArrayList.add(newSong);
     }
+    public void deleteSong(String id){
+        for (Song s : songArrayList){
+            if (s.getId() == id){
+                songArrayList.remove(s);
+            }
+        }
+    }
 }
