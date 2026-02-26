@@ -20,6 +20,10 @@ public class SongDataRepository implements SongRepository {
     public void addSong(String id, String title, String album, String artist, String genre, String duration) {
         songMemLocalDataSource.addSong(id,title,album,artist,genre,duration);
     }
+    @Override
+    public void deleteSong(String id){
+        songMemLocalDataSource.deleteSong(id);
+    }
 
     public static SongDataRepository getInstance(){
         if (instance == null){

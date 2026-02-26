@@ -7,4 +7,5 @@ import java.util.ArrayList;
 public interface SongRepository {
     public ArrayList<Song> findAll();
     public void addSong (String id, String title, String album, String artist, String genre, String duration);
+    public void deleteSong(String id);
 }
