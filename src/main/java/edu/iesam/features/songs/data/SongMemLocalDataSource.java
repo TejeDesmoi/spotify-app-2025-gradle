@@ -23,5 +23,8 @@ public class SongMemLocalDataSource {
     public ArrayList<Song> findAll(){
         return songArrayList;
     }
-
+    public void addSong (String id, String title, String album, String artist, String genre, String duration){
+        Song newSong = new Song(id,title,album,artist,genre,duration);
+        songArrayList.add(newSong);
+    }
 }
