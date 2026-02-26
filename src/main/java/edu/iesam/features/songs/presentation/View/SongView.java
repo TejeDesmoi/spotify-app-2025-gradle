@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class SongView {
 
-    public static void PrintSongs(){
+    public void PrintSongs(){
         GetSongsUseCase getSongsUseCase = new GetSongsUseCase(SongDataRepository.getInstance());
         ArrayList<Song> songList = getSongsUseCase.execute();
 

@@ -5,10 +5,10 @@ import edu.iesam.features.songs.presentation.View.SongView;
 
 public class Main {
     public static void main(String[] args) {
-        AuthorView authorView = new AuthorView();
+        SongView songView = new SongView();
 
-        //authorView.askForAuthor();
-        authorView.printAuthors();
+        songView.askForSongToDelete();
+        songView.PrintSongs();
 
 
     }
