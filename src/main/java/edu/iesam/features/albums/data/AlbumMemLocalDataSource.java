@@ -22,4 +22,7 @@ public class AlbumMemLocalDataSource {
     public ArrayList<Album> findAll(){
         return albumsBdStorage;
     }
+    public void deleteAlbum(String id){
+        albumsBdStorage.removeIf(s-> s.getId().equals(id));
+    }
 }
