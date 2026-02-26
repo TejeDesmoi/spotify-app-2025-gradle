@@ -9,9 +9,9 @@ import java.util.ArrayList;
 public class SongView {
 
     public static void PrintSongs(){
-        GetSongsUseCase getSongsUseCase = new GetSongsUseCase(new SongDataRepository());
-        ArrayList<Song> songList = getSongsUseCase.execute();
+        //GetSongsUseCase getSongsUseCase = new GetSongsUseCase(new SongDataRepository());
+        //ArrayList<Song> songList = getSongsUseCase.execute();
 
-        System.out.println(songList);
+        //System.out.println(songList);
     }
 }

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class SongDataRepository implements SongRepository {
     private final SongMemLocalDataSource songMemLocalDataSource;
+    public static SongDataRepository instance;
 
     public SongDataRepository(SongMemLocalDataSource songMemLocalDataSource){
         this.songMemLocalDataSource = songMemLocalDataSource;
@@ -15,4 +16,11 @@ public class SongDataRepository implements SongRepository {
     @Override
     public ArrayList<Song> findAll() {return songMemLocalDataSource.findAll();}
 
+    public static SongDataRepository getInstance(){
+        if (instance == null){
+            instance = new SongDataRepository(new SongMemLocalDataSource());
+        }
+
+        return instance;
+    }
 }
