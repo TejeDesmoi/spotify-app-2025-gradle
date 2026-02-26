@@ -7,8 +7,9 @@ import java.util.ArrayList;
 
 public class AuthorDataRepository implements AuthorRepository {
     private final AuthorMemLocalDataSource authorMemLocalDataSource;
+    public static AuthorDataRepository instance;
 
-    public AuthorDataRepository(AuthorMemLocalDataSource authorMemLocalDataSource){
+    private AuthorDataRepository(AuthorMemLocalDataSource authorMemLocalDataSource){
         this.authorMemLocalDataSource = authorMemLocalDataSource;
     }
 
@@ -20,5 +21,13 @@ public class AuthorDataRepository implements AuthorRepository {
     @Override
     public void addAuthor(String id, String name, String nationality, String dateBorn) {
         authorMemLocalDataSource.addAuthor(id, name, nationality, dateBorn);
+    }
+
+    public static AuthorDataRepository getInstance(){
+        if (instance == null){
+            instance = new AuthorDataRepository(new AuthorMemLocalDataSource());
+        }
+
+        return instance;
     }
 }
