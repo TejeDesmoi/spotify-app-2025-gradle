@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class AuthorView {
     AuthorMemLocalDataSource authorMemLocalDataSource = new AuthorMemLocalDataSource();
-    AuthorDataRepository authorDataRepository = new AuthorDataRepository(authorMemLocalDataSource);
+    AuthorDataRepository authorDataRepository = AuthorDataRepository.getInstance();
 
     public void printAuthors(){
         GetAuthorsUseCase getAuthorsUseCase = new GetAuthorsUseCase(authorDataRepository);
