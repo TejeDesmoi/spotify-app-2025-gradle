@@ -13,7 +13,10 @@ public class AlbumDataRepository implements AlbumRepository {
         this.albumMemLocalDataSource = albumMemLocalDataSource;
     }
 
+    @Override
     public ArrayList<Album> getAlbums(){
         return albumMemLocalDataSource.findAll();
     }
+    @Override
+    public void deleteAlbum(String id){ albumMemLocalDataSource.deleteAlbum(id); }
 }
