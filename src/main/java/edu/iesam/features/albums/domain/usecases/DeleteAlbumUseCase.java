@@ -10,4 +10,5 @@ public class DeleteAlbumUseCase {
     public void execute(String id){
         albumRepository.deleteAlbum(id);
     }
+
 }
