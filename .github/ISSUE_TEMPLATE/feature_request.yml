@@ -14,27 +14,31 @@ body:
   - type: textarea
     id: problema
     attributes:
-      label: 🤔 Problema que resuelve
-      description: ¿Qué problema actual resuelve esta feature?
+      label: 🎯 Historia de usuario
+      description: Como Rol, Usuario/Desarrollador/Product Manager/etc.,quiero Funcionalidad que se va a construir, para poder Valor/Beneficio que aporta al proyecto.
     validations:
       required: true
 
   - type: textarea
-    id: solucion
+    id: interfaz
     attributes:
-      label: 💡 Solución propuesta
-      description: Describe tu idea claramente.
+      label: 👩🏽‍🎨 Interfaz de usuario
+      description: Imagen de la interfaz si aplica.
+
+  - type: textarea
+    id: Criterios
+    attributes:
+      label: ✅ Criterios de Aceptación
+      description: ¿Esta tarea se considerará terminada y lista para revisión solo si se cumplen todos los criterios siguientes.
     validations:
       required: true
 
   - type: textarea
-    id: alternativas
+    id: referencias
     attributes:
-      label: 🔄 Alternativas consideradas
-      description: ¿Has considerado otras soluciones?
+      label: 📚Referencias y Recursos
 
-  - type: textarea
-    id: contexto
+  - type: texarea
+    id: impedimentos
     attributes:
-      label: 📎 Contexto adicional
-      description: Cualquier información relevante.
+      label: 🛑Impedimentos Detectados
