@@ -2,6 +2,7 @@ package edu.iesam.features.songs.presentation.View;
 
 import edu.iesam.features.songs.data.SongDataRepository;
 import edu.iesam.features.songs.domain.Models.Song;
+import edu.iesam.features.songs.domain.UseCases.DeleteSongUseCase;
 import edu.iesam.features.songs.domain.UseCases.GetSongsUseCase;
 import edu.iesam.features.songs.domain.UseCases.SaveSongUseCase;
 
@@ -42,5 +43,16 @@ public class SongView {
 
         saveSongUseCase.execute(id,title,album,artist,genre,duration);
 
+    }
+    public void askForSongToDelete(){
+        DeleteSongUseCase deleteSongUseCase = new DeleteSongUseCase(SongDataRepository.getInstance());
+
+        Scanner sc = new Scanner(System.in);
+        String id;
+
+        System.out.print("Escriba el id de la cancion que desea borrar: ");
+        id = sc.nextLine();
+
+        deleteSongUseCase.execute(id);
     }
 }
